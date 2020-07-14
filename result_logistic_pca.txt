@@ -1,0 +1,410 @@
+
+generating logistic regression models - with pca
+################################################################################################################################################
+generating models for:  y_pctl_extroversion
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_pctl_extroversion highest squared
+pca_n:12 = y_pctl_extroversion ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  35.408
+compared with random =  36.40260979655168
+custom metric        =  (0.4, 0.15)
+custom metric random =  (0.35, 0.188)
+########################################################################
+########################################################################
+y_pctl_extroversion best fit
+pca_n:1 = y_pctl_extroversion ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.15
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  35.201
+compared with random =  40.70472945494172
+custom metric        =  (0.438, 0.087)
+custom metric random =  (0.3, 0.163)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_neuroticism
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_pctl_neuroticism highest squared
+pca_n:13 = y_pctl_neuroticism ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  32.432
+compared with random =  42.52984246385119
+custom metric        =  (0.3, 0.2)
+custom metric random =  (0.325, 0.225)
+########################################################################
+########################################################################
+y_pctl_neuroticism best fit
+pca_n:10 = y_pctl_neuroticism ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.5625
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  29.672
+compared with random =  40.84635846682051
+custom metric        =  (0.425, 0.125)
+custom metric random =  (0.325, 0.1)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_agreeableness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_pctl_agreeableness highest squared
+pca_n:12 = y_pctl_agreeableness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.475
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  27.11
+compared with random =  39.63095381138334
+custom metric        =  (0.375, 0.225)
+custom metric random =  (0.3, 0.113)
+########################################################################
+########################################################################
+y_pctl_agreeableness best fit
+pca_n:4 = y_pctl_agreeableness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.25
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  24.78
+compared with random =  37.47365741424234
+custom metric        =  (0.537, 0.188)
+custom metric random =  (0.35, 0.15)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_conscientiousness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_pctl_conscientiousness highest squared
+pca_n:13 = y_pctl_conscientiousness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.65
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  28.639
+compared with random =  42.24275085739564
+custom metric        =  (0.375, 0.175)
+custom metric random =  (0.275, 0.113)
+########################################################################
+########################################################################
+y_pctl_conscientiousness best fit
+pca_n:3 = y_pctl_conscientiousness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.225
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  27.665
+compared with random =  34.38349894935069
+custom metric        =  (0.475, 0.163)
+custom metric random =  (0.412, 0.138)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_openness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_pctl_openness highest squared
+pca_n:13 = y_pctl_openness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  29.508
+compared with random =  41.89883649935879
+custom metric        =  (0.312, 0.325)
+custom metric random =  (0.25, 0.125)
+########################################################################
+########################################################################
+y_pctl_openness best fit
+pca_n:1 = y_pctl_openness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.1125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  26.504
+compared with random =  41.81387329583329
+custom metric        =  (0.45, 0.25)
+custom metric random =  (0.25, 0.212)
+########################################################################
+
+########################################################################
+
+
+writing cleaned file to enquete_cleaned.csv
+generating logistic regression models - with pca
+################################################################################################################################################
+generating models for:  y_intvl_openness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_intvl_openness highest squared
+pca_n:13 = y_intvl_openness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.7125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.894
+compared with random =  1.2196310917650468
+custom metric        =  (53.75, 0.0)
+custom metric random =  (37.5, 0)
+########################################################################
+########################################################################
+y_intvl_openness best fit
+pca_n:3 = y_intvl_openness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.86
+compared with random =  1.1989578808281798
+custom metric        =  (60.0, 0.0)
+custom metric random =  (31.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_conscientiousness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_intvl_conscientiousness highest squared
+pca_n:12 = y_intvl_conscientiousness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.261
+compared with random =  1.161895003862225
+custom metric        =  (35.0, 0.0)
+custom metric random =  (36.25, 0)
+########################################################################
+########################################################################
+y_intvl_conscientiousness best fit
+pca_n:11 = y_intvl_conscientiousness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.5875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.159
+compared with random =  1.1884864324004714
+custom metric        =  (43.75, 0.0)
+custom metric random =  (37.5, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_extroversion
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_intvl_extroversion highest squared
+pca_n:9 = y_intvl_extroversion ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.65
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.181
+compared with random =  1.3693063937629153
+custom metric        =  (50.0, 0.0)
+custom metric random =  (25.0, 0)
+########################################################################
+########################################################################
+y_intvl_extroversion best fit
+pca_n:12 = y_intvl_extroversion ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.625
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.107
+compared with random =  1.3038404810405297
+custom metric        =  (53.75, 0.0)
+custom metric random =  (31.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_agreeableness
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_intvl_agreeableness highest squared
+pca_n:15 = y_intvl_agreeableness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.65
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.063
+compared with random =  1.1832159566199232
+custom metric        =  (45.0, 0.0)
+custom metric random =  (38.75, 0)
+########################################################################
+########################################################################
+y_intvl_agreeableness best fit
+pca_n:14 = y_intvl_agreeableness ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.034
+compared with random =  1.1291589790636214
+custom metric        =  (43.75, 0.0)
+custom metric random =  (40.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_neuroticism
+    generating pca depth  1
+    generating pca depth  2
+    generating pca depth  3
+    generating pca depth  4
+    generating pca depth  5
+    generating pca depth  6
+    generating pca depth  7
+    generating pca depth  8
+    generating pca depth  9
+    generating pca depth  10
+    generating pca depth  11
+    generating pca depth  12
+    generating pca depth  13
+    generating pca depth  14
+    generating pca depth  15
+    generating pca depth  16
+########################################################################
+y_intvl_neuroticism highest squared
+pca_n:8 = y_intvl_neuroticism ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.103
+compared with random =  1.2449899597988732
+custom metric        =  (47.5, 0.0)
+custom metric random =  (27.500000000000004, 0)
+########################################################################
+########################################################################
+y_intvl_neuroticism best fit
+pca_n:9 = y_intvl_neuroticism ~ age+sex+alfa+beta+scie+math+sport+ent+hist+geo+arch+do_question+do_question_single+do_question_group+collect+total_answers+total_categories
+rsquared             =  0.6
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.981
+compared with random =  1.1989578808281798
+custom metric        =  (50.0, 0.0)
+custom metric random =  (31.25, 0)
+########################################################################
+
+########################################################################

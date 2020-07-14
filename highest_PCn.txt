@@ -1,0 +1,20 @@
+
+level  3  highest =  (100.0, ('beta', 'scie', 'math'), array([81.1, 18.9,  0. ]))
+level  4  highest =  (96.5, ('alfa', 'hist', 'arch', 'collect'), array([72.7, 23.8,  3.1,  0.5]))
+level  5  highest =  (93.4, ('alfa', 'hist', 'arch', 'do_question', 'do_question_single'), array([64.9, 28.5,  3.6,  2.7,  0.3]))
+level  6  highest =  (91.5, ('alfa', 'beta', 'scie', 'hist', 'arch', 'total_answers'), array([67.2, 24.3,  3.1,  2.8,  2.2,  0.4]))
+level  7  highest =  (86.6, ('alfa', 'beta', 'scie', 'math', 'hist', 'arch', 'total_answers'), array([62.3, 24.3,  8.2,  2.5,  2.3,  0.3,  0. ]))
+level  8  highest =  (82.8, ('alfa', 'beta', 'scie', 'math', 'hist', 'arch', 'total_answers', 'total_categories'), array([61.5, 21.3,  7.3,  5.8,  2.2,  1.6,  0.3,  0. ]))
+level  9  highest =  (77.4, ('alfa', 'beta', 'scie', 'math', 'hist', 'geo', 'arch', 'total_answers', 'total_categories'), array([58.4, 19. ,  9.2,  6. ,  4.2,  1.8,  1.2,  0.2,  0. ]))
+level  10  highest =  (72.80000000000001, ('alfa', 'beta', 'scie', 'math', 'hist', 'geo', 'arch', 'do_question', 'total_answers', 'total_categories'), array([55.7, 17.1, 10.9,  5.4,  5.1,  3.4,  1.4,  0.7,  0.2,  0. ]))
+level  11  highest =  (69.6, ('alfa', 'beta', 'scie', 'math', 'hist', 'geo', 'arch', 'do_question', 'do_question_group', 'total_answers', 'total_categories'), array([53.8, 15.8, 13.5,  4.9,  4.9,  3.7,  1.6,  1. ,  0.7,  0.1,  0. ]))
+level  12  highest =  (66.5, ('alfa', 'beta', 'scie', 'math', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'total_answers', 'total_categories'), array([51.6, 14.9, 13.8,  7.1,  4.5,  3.8,  2.3,  1.1,  0.6,  0.1,  0. ,
+        0. ]))
+level  13  highest =  (63.400000000000006, ('alfa', 'beta', 'scie', 'math', 'sport', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'total_answers', 'total_categories'), array([48.7, 14.7, 12.9,  7.4,  5.5,  4.1,  3.2,  2.1,  0.9,  0.3,  0.1,
+        0. ,  0. ]))
+level  14  highest =  (60.2, ('alfa', 'beta', 'scie', 'math', 'sport', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories'), array([46.5, 13.7, 12. ,  8.8,  6.3,  4.4,  3.4,  2.4,  1.5,  0.7,  0.2,
+        0.1,  0. ,  0. ]))
+level  15  highest =  (57.099999999999994, ('sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories'), array([43.8, 13.3, 11.2,  8.5,  6.8,  4.9,  4. ,  3.2,  2.1,  1.2,  0.7,
+        0.2,  0.1,  0. ,  0. ]))
+level  16  highest =  (54.6, ('sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories'), array([41.5, 13.1, 10.6,  8.2,  6.9,  6.2,  4.5,  3.6,  2.7,  1.1,  1. ,
+        0.5,  0.1,  0. ,  0. ,  0. ]))

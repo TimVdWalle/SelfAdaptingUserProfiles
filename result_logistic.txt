@@ -1,0 +1,770 @@
+generating logistic regression models
+################################################################################################################################################
+generating models for:  y_scie
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+    generating length  9
+    generating length  10
+########################################################################
+y_scie highest squared
+pca_n:1 = y_scie ~ beta_norm+collect_norm+ges3+scie_norm+total_answers_norm+wet5+wis1
+rsquared             =  0.8
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.467
+compared with random =  57.07418418164205
+custom metric        =  (73.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_scie best fit
+pca_n:1 = y_scie ~ math_norm+total_answers_norm+wet5+wis1
+rsquared             =  0.7375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.437
+compared with random =  58.33716654072256
+custom metric        =  (75.0, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_math
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_math highest squared
+pca_n:1 = y_math ~ beta_norm+wis1
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.359
+compared with random =  56.96336542024181
+custom metric        =  (82.5, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_math best fit
+pca_n:1 = y_math ~ beta_norm+wis1
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.359
+compared with random =  56.96336542024181
+custom metric        =  (82.5, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_sport
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+    generating length  9
+########################################################################
+y_sport highest squared
+pca_n:1 = y_sport ~ aar2+arc2+arc3+do_question_norm+spo2
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.458
+compared with random =  55.452795240636874
+custom metric        =  (76.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+########################################################################
+y_sport best fit
+pca_n:1 = y_sport ~ aar2+spo1+spo2+wet4
+rsquared             =  0.8125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.388
+compared with random =  57.93530875036397
+custom metric        =  (80.0, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_ent
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+########################################################################
+y_ent highest squared
+pca_n:1 = y_ent ~ do_question_single_norm+spo2+wis2
+rsquared             =  0.8375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.379
+compared with random =  57.87518898457265
+custom metric        =  (81.25, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_ent best fit
+pca_n:1 = y_ent ~ spo2+wis2
+rsquared             =  0.8125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.353
+compared with random =  56.30552814777604
+custom metric        =  (81.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_hist
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_hist highest squared
+pca_n:1 = y_hist ~ geo_norm+ges3+spo3
+rsquared             =  0.8
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.481
+compared with random =  58.68517700407829
+custom metric        =  (72.5, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_hist best fit
+pca_n:1 = y_hist ~ hist_norm+spo3
+rsquared             =  0.775
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.422
+compared with random =  59.38970870445485
+custom metric        =  (76.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_geo
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_geo highest squared
+pca_n:1 = y_geo ~ do_question_single_norm+ent1+ent_norm+hist_norm
+rsquared             =  0.8
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.486
+compared with random =  56.16515823889398
+custom metric        =  (75.0, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_geo best fit
+pca_n:1 = y_geo ~ aar4+do_question_single_norm+ent1+ent_norm+geo_norm+ges3+hist_norm
+rsquared             =  0.7875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.479
+compared with random =  56.12474944264785
+custom metric        =  (76.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_arch
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+    generating length  9
+    generating length  10
+########################################################################
+y_arch highest squared
+pca_n:1 = y_arch ~ aar3+arch_norm+ges1+spo2
+rsquared             =  0.85
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.399
+compared with random =  56.554840641628545
+custom metric        =  (78.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_arch best fit
+pca_n:1 = y_arch ~ aar3+aar4+arc1+arc3+arch_norm+ges1+total_answers_norm
+rsquared             =  0.8375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.338
+compared with random =  55.36707053836242
+custom metric        =  (82.5, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_extroversion
+    generating length  2
+    generating length  3
+########################################################################
+y_pctl_extroversion highest squared
+pca_n:1 = y_pctl_extroversion ~ do_question_group_norm+wet2+wet4
+rsquared             =  0.175
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  28.761
+compared with random =  41.920311306095996
+custom metric        =  (2.5, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_pctl_extroversion best fit
+pca_n:1 = y_pctl_extroversion ~ do_question_group_norm+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  27.525
+compared with random =  42.18189777617882
+custom metric        =  (12.5, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_neuroticism
+########################################################################
+y_pctl_neuroticism highest squared
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+########################################################################
+y_pctl_neuroticism best fit
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_agreeableness
+########################################################################
+y_pctl_agreeableness highest squared
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+########################################################################
+y_pctl_agreeableness best fit
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_conscientiousness
+    generating length  2
+########################################################################
+y_pctl_conscientiousness highest squared
+pca_n:1 = y_pctl_conscientiousness ~ spo4+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  26.229
+compared with random =  38.82508853821199
+custom metric        =  (3.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_pctl_conscientiousness best fit
+pca_n:1 = y_pctl_conscientiousness ~ spo4+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  26.229
+compared with random =  38.82508853821199
+custom metric        =  (3.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_openness
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_pctl_openness highest squared
+pca_n:1 = y_pctl_openness ~ aar2+alfa_norm+arc3+ges1+ges3+hist_norm+total_answers_norm
+rsquared             =  0.2125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  29.022
+compared with random =  43.78141729090094
+custom metric        =  (3.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_pctl_openness best fit
+pca_n:1 = y_pctl_openness ~ alfa_norm+arc3+arch_norm+total_answers_norm
+rsquared             =  0.1375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  24.781
+compared with random =  39.65081966365891
+custom metric        =  (1.25, 0.0)
+custom metric random =  (2.5, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_openness
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+########################################################################
+y_intvl_openness highest squared
+pca_n:1 = y_intvl_openness ~ arch_norm+ent3+ges1+ges3
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.88
+compared with random =  54.954640386413224
+custom metric        =  (58.75, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+########################################################################
+y_intvl_openness best fit
+pca_n:1 = y_intvl_openness ~ arch_norm+ges1
+rsquared             =  0.6125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.855
+compared with random =  59.16597417435126
+custom metric        =  (60.0, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_conscientiousness
+    generating length  2
+########################################################################
+y_intvl_conscientiousness highest squared
+pca_n:1 = y_intvl_conscientiousness ~ spo4+wet4
+rsquared             =  0.5125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.998
+compared with random =  56.696230033398166
+custom metric        =  (51.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+########################################################################
+y_intvl_conscientiousness best fit
+pca_n:1 = y_intvl_conscientiousness ~ spo4+wet4
+rsquared             =  0.5125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.998
+compared with random =  56.696230033398166
+custom metric        =  (51.25, 0.0)
+custom metric random =  (1.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_extroversion
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+########################################################################
+y_intvl_extroversion highest squared
+pca_n:1 = y_intvl_extroversion ~ do_question_group_norm+wet2
+rsquared             =  0.5875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.059
+compared with random =  56.67539148519399
+custom metric        =  (58.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+########################################################################
+y_intvl_extroversion best fit
+pca_n:1 = y_intvl_extroversion ~ do_question_group_norm+wet2
+rsquared             =  0.5875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.059
+compared with random =  56.67539148519399
+custom metric        =  (58.75, 0.0)
+custom metric random =  (0.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_agreeableness
+########################################################################
+y_intvl_agreeableness highest squared
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+########################################################################
+y_intvl_agreeableness best fit
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_neuroticism
+########################################################################
+y_intvl_neuroticism highest squared
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+########################################################################
+y_intvl_neuroticism best fit
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+
+########################################################################
+
+
+
+generating logistic regression models
+################################################################################################################################################
+generating models for:  y_intvl_openness
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_intvl_openness highest squared
+pca_n:1 = y_intvl_openness ~ arch_norm+ent3+ges1+ges3
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.88
+compared with random =  1.1832159566199232
+custom metric        =  (58.75, 0.0)
+custom metric random =  (35.0, 0)
+########################################################################
+########################################################################
+y_intvl_openness best fit
+pca_n:1 = y_intvl_openness ~ arch_norm+ent3+ges1+ges3+hist_norm+total_answers_norm
+rsquared             =  0.6375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.829
+compared with random =  1.1124297730643495
+custom metric        =  (58.75, 0.0)
+custom metric random =  (32.5, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_conscientiousness
+    generating length  2
+########################################################################
+y_intvl_conscientiousness highest squared
+pca_n:1 = y_intvl_conscientiousness ~ spo4+wet4
+rsquared             =  0.5125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.998
+compared with random =  1.25
+custom metric        =  (51.25, 0.0)
+custom metric random =  (30.0, 0)
+########################################################################
+########################################################################
+y_intvl_conscientiousness best fit
+pca_n:1 = y_intvl_conscientiousness ~ spo4+wet4
+rsquared             =  0.5125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.998
+compared with random =  1.25
+custom metric        =  (51.25, 0.0)
+custom metric random =  (30.0, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_extroversion
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+########################################################################
+y_intvl_extroversion highest squared
+pca_n:1 = y_intvl_extroversion ~ do_question_group_norm+wet2
+rsquared             =  0.5875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.059
+compared with random =  1.2698425099200294
+custom metric        =  (58.75, 0.0)
+custom metric random =  (32.5, 0)
+########################################################################
+########################################################################
+y_intvl_extroversion best fit
+pca_n:1 = y_intvl_extroversion ~ do_question_group_norm+wet2
+rsquared             =  0.5875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.059
+compared with random =  1.2698425099200294
+custom metric        =  (58.75, 0.0)
+custom metric random =  (32.5, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_agreeableness
+########################################################################
+y_intvl_agreeableness highest squared
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+########################################################################
+y_intvl_agreeableness best fit
+
+rsquared             =  0
+rsquared_adj         =  0
+fitness_norm         =  9999
+fitnes absolute      =  9999
+compared with random =  0
+custom metric        =  0
+custom metric random =  0
+########################################################################
+################################################################################################################################################
+generating models for:  y_intvl_neuroticism
+    generating length  2
+########################################################################
+y_intvl_neuroticism highest squared
+pca_n:1 = y_intvl_neuroticism ~ ent3+spo4
+rsquared             =  0.5375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.022
+compared with random =  1.1565033506220377
+custom metric        =  (53.75, 0.0)
+custom metric random =  (33.75, 0)
+########################################################################
+########################################################################
+y_intvl_neuroticism best fit
+pca_n:1 = y_intvl_neuroticism ~ ent3+spo4
+rsquared             =  0.5375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  1.022
+compared with random =  1.1565033506220377
+custom metric        =  (53.75, 0.0)
+custom metric random =  (33.75, 0)
+########################################################################
+
+########################################################################
+
+
+
+generating logistic regression models
+################################################################################################################################################
+generating models for:  y_pctl_extroversion
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+########################################################################
+y_pctl_extroversion highest squared
+pca_n:1 = y_pctl_extroversion ~ aar3+do_question_group_norm+wet1+wet2+wet4
+rsquared             =  0.2
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  29.356
+compared with random =  42.068396689201265
+custom metric        =  (0.512, 0.163)
+custom metric random =  (0.287, 0.188)
+########################################################################
+########################################################################
+y_pctl_extroversion best fit
+pca_n:1 = y_pctl_extroversion ~ do_question_group_norm+do_question_norm+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  27.195
+compared with random =  39.579350676836526
+custom metric        =  (0.5, 0.15)
+custom metric random =  (0.225, 0.25)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_neuroticism
+    generating length  2
+    generating length  3
+########################################################################
+y_pctl_neuroticism highest squared
+pca_n:1 = y_pctl_neuroticism ~ ent_norm+spo4
+rsquared             =  0.15
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  33.988
+compared with random =  37.141452583333354
+custom metric        =  (0.375, 0.113)
+custom metric random =  (0.3, 0.2)
+########################################################################
+########################################################################
+y_pctl_neuroticism best fit
+pca_n:1 = y_pctl_neuroticism ~ ent_norm+spo4
+rsquared             =  0.15
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  33.988
+compared with random =  37.141452583333354
+custom metric        =  (0.375, 0.113)
+custom metric random =  (0.3, 0.2)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_agreeableness
+    generating length  2
+    generating length  3
+########################################################################
+y_pctl_agreeableness highest squared
+pca_n:1 = y_pctl_agreeableness ~ ent2+wis3
+rsquared             =  0.175
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  25.424
+compared with random =  34.958546880555545
+custom metric        =  (0.475, 0.225)
+custom metric random =  (0.312, 0.237)
+########################################################################
+########################################################################
+y_pctl_agreeableness best fit
+pca_n:1 = y_pctl_agreeableness ~ spo4+wis3
+rsquared             =  0.1375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  22.358
+compared with random =  32.99488596737379
+custom metric        =  (0.525, 0.188)
+custom metric random =  (0.35, 0.212)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_conscientiousness
+    generating length  2
+    generating length  3
+########################################################################
+y_pctl_conscientiousness highest squared
+pca_n:1 = y_pctl_conscientiousness ~ spo4+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  26.229
+compared with random =  43.26242596064164
+custom metric        =  (0.35, 0.237)
+custom metric random =  (0.263, 0.1)
+########################################################################
+########################################################################
+y_pctl_conscientiousness best fit
+pca_n:1 = y_pctl_conscientiousness ~ spo4+wet4
+rsquared             =  0.125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  26.229
+compared with random =  43.26242596064164
+custom metric        =  (0.35, 0.237)
+custom metric random =  (0.263, 0.1)
+########################################################################
+################################################################################################################################################
+generating models for:  y_pctl_openness
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+    generating length  9
+########################################################################
+y_pctl_openness highest squared
+pca_n:1 = y_pctl_openness ~ aar2+alfa_norm+arch_norm+ges3+spo3+total_answers_norm
+rsquared             =  0.25
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  27.195
+compared with random =  40.14177998046424
+custom metric        =  (0.425, 0.188)
+custom metric random =  (0.237, 0.138)
+########################################################################
+########################################################################
+y_pctl_openness best fit
+pca_n:1 = y_pctl_openness ~ alfa_norm+arc3+arch_norm+total_answers_norm
+rsquared             =  0.1375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  24.781
+compared with random =  38.637417097937586
+custom metric        =  (0.412, 0.3)
+custom metric random =  (0.3, 0.138)
+########################################################################
+
+########################################################################

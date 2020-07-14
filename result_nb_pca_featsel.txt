@@ -1,0 +1,216 @@
+
+generating naive bayes model - with PCA + feature selection
+################################################################################################################################################
+generating models for:  y_scie
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_scie highest squared
+pca_n:4 = y_scie ~ beta_norm+ges3+total_answers_norm+wis4
+rsquared             =  0.7875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.558
+compared with random =  0.7664854858377946
+custom metric        =  (66.25, 0.0)
+custom metric random =  (41.25, 0)
+########################################################################
+########################################################################
+y_scie best fit
+pca_n:2 = y_scie ~ beta_norm+ges3+scie_norm+wis1
+rsquared             =  0.7625
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.435
+compared with random =  0.6800735254367721
+custom metric        =  (77.5, 0.0)
+custom metric random =  (53.75, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_math
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+########################################################################
+y_math highest squared
+pca_n:1 = y_math ~ beta_norm+wis1+wis4
+rsquared             =  0.8375
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.367
+compared with random =  0.7158910531638176
+custom metric        =  (82.5, 0.0)
+custom metric random =  (48.75, 0)
+########################################################################
+########################################################################
+y_math best fit
+pca_n:2 = y_math ~ wis1+wis2
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.353
+compared with random =  0.6614378277661477
+custom metric        =  (83.75, 0.0)
+custom metric random =  (56.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_sport
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+########################################################################
+y_sport highest squared
+pca_n:2 = y_sport ~ aar2+sport_norm
+rsquared             =  0.8125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.485
+compared with random =  0.698212002188447
+custom metric        =  (75.0, 0.0)
+custom metric random =  (51.24999999999999, 0)
+########################################################################
+########################################################################
+y_sport best fit
+pca_n:3 = y_sport ~ aar2+spo1+spo2+sport_norm
+rsquared             =  0.8125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.41
+compared with random =  0.6614378277661477
+custom metric        =  (80.0, 0.0)
+custom metric random =  (56.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_ent
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+########################################################################
+y_ent highest squared
+pca_n:1 = y_ent ~ do_question_single_norm+wis2
+rsquared             =  0.85
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.404
+compared with random =  0.75
+custom metric        =  (78.75, 0.0)
+custom metric random =  (43.75, 0)
+########################################################################
+########################################################################
+y_ent best fit
+pca_n:2 = y_ent ~ do_question_norm+total_categories_norm+wis2
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.367
+compared with random =  0.733143914930759
+custom metric        =  (82.5, 0.0)
+custom metric random =  (46.25, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_hist
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+########################################################################
+y_hist highest squared
+pca_n:3 = y_hist ~ alfa_norm+geo_norm+ges3+spo3
+rsquared             =  0.825
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.49
+compared with random =  0.6123724356957945
+custom metric        =  (75.0, 0.0)
+custom metric random =  (62.5, 0)
+########################################################################
+########################################################################
+y_hist best fit
+pca_n:1 = y_hist ~ aar2+ges1+ges2+ges3+spo3
+rsquared             =  0.7125
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.373
+compared with random =  0.6224949798994366
+custom metric        =  (78.75, 0.0)
+custom metric random =  (61.25000000000001, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_geo
+    generating length  2
+    generating length  3
+    generating length  4
+    generating length  5
+########################################################################
+y_geo highest squared
+pca_n:3 = y_geo ~ do_question_single_norm+ges3+hist_norm
+rsquared             =  0.775
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.559
+compared with random =  0.7158910531638176
+custom metric        =  (63.75, 0.0)
+custom metric random =  (48.75, 0)
+########################################################################
+########################################################################
+y_geo best fit
+pca_n:2 = y_geo ~ ent_norm+hist_norm
+rsquared             =  0.7625
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.425
+compared with random =  0.7158910531638176
+custom metric        =  (76.25, 0.0)
+custom metric random =  (48.75, 0)
+########################################################################
+################################################################################################################################################
+generating models for:  y_arch
+    generating length  2
+    generating length  3
+83
+    generating length  4
+    generating length  5
+    generating length  6
+    generating length  7
+    generating length  8
+    generating length  9
+    generating length  10
+########################################################################
+y_arch highest squared
+pca_n:7 = y_arch ~ aar3+aar4+arc1+arc3+arch_norm+ges1+total_answers_norm
+rsquared             =  0.8625
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.427
+compared with random =  0.689202437604511
+custom metric        =  (78.75, 0.0)
+custom metric random =  (52.5, 0)
+########################################################################
+########################################################################
+y_arch best fit
+pca_n:6 = y_arch ~ aar3+alfa_norm+arch_norm+do_question_group_norm+geo_norm+ges1+total_answers_norm
+rsquared             =  0.7875
+rsquared_adj         =  -1
+fitness_norm         =  0.0
+fitnes absolute      =  0.341
+compared with random =  0.7071067811865476
+custom metric        =  (85.0, 0.0)
+custom metric random =  (50.0, 0)
+########################################################################
+
+########################################################################
