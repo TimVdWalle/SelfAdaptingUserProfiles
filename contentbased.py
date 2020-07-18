@@ -51,6 +51,8 @@ TotalRating
 = sum of all weights/booleans from all the categories from the content items that the user interacted with 
 """
 
+results = pd.DataFrame(index=['scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch',     'extroversion', 'neuroticism', 'agreeableness', 'conscientiousness', 'openness'], columns=range(1,100))
+results = results.fillna(0.0) # with 0s rather than NaNs
 
 def run():
     print("running contentbased algorithm")
@@ -61,30 +63,36 @@ def run():
     # read prepared data
     dataset = pd.read_csv(configuration.data_file_cleaned)
 
-    for threshold in range(1,99):
+    for threshold in range(1,100):
         calculateAllProfiles(dataset, threshold)
 
+    print(results)
+    results.to_csv("content_based_results.csv")
+
 def calculateAllProfiles(dataset, threshold):
-    validationAll = 0
-    for index, profile in dataset.iterrows():
-        validationAll = validationAll + calculateProfile(profile, threshold)
     
-    print("validation of all profiles for threshold", threshold, ":", validationAll / dataset.shape[0])
+    for index, profile in dataset.iterrows():
+        #validationAll = validationAll + calculateProfile(profile, threshold)
+        calculateProfile(profile, threshold)
+    
+    
+    
+    
+    #print("validation of all profiles for threshold", threshold, ":", validationAll / dataset.shape[0])
 
 def calculateProfile(profile, threshold):
-    #print("calculating profile ", profile['profileId'], profile['categories'])
+    print("calculating profile ", profile['profileId'], profile['categories'])
 
     # CategoryScore = (CategoryRating * 100) / TotalRating
 
     # totalrating
     totalrating = 0
-    numberCorrect = 0
     for question in configuration.questions:
         if profile[question] == True:
             totalrating = totalrating + 1
 
-    for feature in configuration.contentbased:
-
+    for feature in configuration.contentbased_interests:
+        numberCorrect = 0
         categoryRating = 0
         for featurequestion in feature[1]:
             if profile[featurequestion] == True:
@@ -99,5 +107,42 @@ def calculateProfile(profile, threshold):
         else:
             if profile['y_' + feature[0]] == 0:
                 numberCorrect = numberCorrect + 1
+
+        r = numberCorrect / 80
+        #print(feature[0], threshold, r)
+
+
+        results[threshold][feature[0]] = results[threshold][feature[0]] + r
+
+    for feature in configuration.contentbased_psy:
+        #print("calculateing ", feature[0])
+        numberCorrect = 0
+        categoryRating = 0
+        for featurequestion in feature[1]:
+            if profile[featurequestion] == True:
+                categoryRating = categoryRating + 1
         
-    return numberCorrect/len(configuration.contentbased)
+        categoryScore = round(categoryRating * 100 / totalrating, 1)
+        #print(categoryScore)
+        #print(feature[0])
+        if categoryScore >= threshold:
+            #print(" ", feature[0], ":", categoryScore)
+            #    y_intvl_openness_2
+            #print("checking", 'y_intvl_' + feature[0] + '_2', " = ", profile['y_intvl_' + feature[0] + '_2'])
+            if profile['y_intvl_' + feature[0] + '_2'] == 1:
+                #print("corret 1")
+                numberCorrect = numberCorrect + 1
+
+        else:
+            if profile['y_intvl_' + feature[0] + "_2"] == 0:
+                #print("corret 2")
+                numberCorrect = numberCorrect + 1
+
+        r = numberCorrect / 80
+        #results
+
+
+        results[threshold][feature[0]] = results[threshold][feature[0]] + r        #print(feature[0], threshold, r)
+
+        
+    #return numberCorrect/len(configuration.contentbased)

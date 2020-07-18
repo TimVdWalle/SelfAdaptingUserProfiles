@@ -83,7 +83,7 @@ def scatter_plots(dataset):
 def pca_plots(dataset):
     print("plots")
     
-    dimensions = ["y_intvl_openness", "y_intvl_conscientiousness", "y_intvl_extroversion", "y_intvl_agreeableness", "y_intvl_neuroticism", "y_scie", "y_math", "y_sport", "y_ent", "y_hist", "y_geo", "y_arch"]
+    dimensions = ["y_intvl_openness_2", "y_intvl_conscientiousness_2", "y_intvl_extroversion_2", "y_intvl_agreeableness_2", "y_intvl_neuroticism_2", "y_scie", "y_math", "y_sport", "y_ent", "y_hist", "y_geo", "y_arch"]
     subset = ['alfa', 'beta', 'scie', 'math', 'hist', 'arch', 'total_answers', 'total_categories']
     
     for dim in dimensions:

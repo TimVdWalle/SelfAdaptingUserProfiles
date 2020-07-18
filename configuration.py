@@ -8,7 +8,7 @@ dependent   = [    'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_ext
 #   filters
 ########################################################
 age_min = 10
-age_max = 50 
+age_max = 99 
 
 metric_low      = 15
 metric_medium   = 25
@@ -104,7 +104,7 @@ features = [
     ('beta_doquestion',         ['wet1', 'wet2', 'wet3', 'wet4', 'wet5', 'wis1', 'wis2', 'wis3', 'wis4', 'spo2', 'spo3', 'aar1', 'aar2', 'arc1', 'aar3'])
 ]
 
-contentbased = [
+contentbased_interests = [
     ('scie',    ['wet1', 'wet2', 'wet3', 'wet4', 'wet5']),
     ('math',    ['wis1', 'wis2', 'wis3', 'wis4']),
     ('sport',   ['spo1', 'spo2', 'spo3', 'spo4', 'spo6', 'arc2']),
@@ -113,6 +113,15 @@ contentbased = [
     ('geo',     ['aar1', 'aar2', 'aar3', 'aar4', 'wet5']),
     ('arch',    ['arc1', 'arc2', 'arc3', 'ges1'])
 ]
+
+contentbased_psy = [
+    ('extroversion',         ['spo2', 'spo3', 'aar3', 'wis3', 'wet4', 'aar4', 'aar3', 'arc1']),
+    ('neuroticism',          ['wis4', 'arc2', 'aar3', 'wet3', 'ges1', 'aar3']),
+    ('agreeableness',        ['spo1', 'spo2', 'aar3', 'wis3', 'ent1', 'ent2', 'spo4', 'spo6']),
+    ('conscientiousness',    ['ges3', 'spo1', 'spo2', 'aar3', 'wis2', 'wis3', 'ent1', 'spo4', 'spo6', 'arc3', 'aar2', 'wet5']),
+    ('openness',             ['ges3', 'wis4', 'spo4', 'ges1', 'arc3']),      #aar2, wet5
+]
+
 
 
 interestcategories      = [
@@ -182,8 +191,8 @@ idx_traits      = 1
 
 delete_cols = {
     'Tijdstempel',
-    #'Naam (niet verplicht)',
-    #'Woonplaats', 
+    'Naam (niet verplicht)',
+    'Woonplaats'
     #'Bekijk (in de app) een uitleg over hoe je reanimatie moet doen en bewaar deze bij je favorieten.'          # is double in the file because of changes in the form setup, is available as column in results, but contains no information
 }
 

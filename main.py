@@ -32,15 +32,18 @@ import logregpcafeatsel
 import nb
 
 
+
+
 ########################################################################
 #   Functions - app Logic
 ########################################################################
 def menu():
     choice = True
+    # 1:  N/A Run Genetic Algorithm
+    
     while choice:
         print("""
         0:  Preprocess and analyse data
-        1:  N/A Run Genetic Algorithm
         2:  Run Content-based Algorithm
         3:  Run Predictive Model Linear Regression              (automatic feature selection)
         4:  Run Predictive Model Polynomial Regression          (automatic feature selection)
