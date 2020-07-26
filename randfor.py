@@ -1,5 +1,15 @@
 ########################################################################
 #
+#   Self Adapting User Profiles
+#   Tim Vande Walle
+#   2019-2020
+#   Thesis VUB
+#   promotor: Olga De Troyer
+#
+########################################################################
+
+########################################################################
+#
 #   linear regression lib for SelfAdaptionUserProfiles
 #   https://medium.com/all-things-ai/in-depth-parameter-tuning-for-random-forest-d67bb7e920d
 #
@@ -37,16 +47,18 @@ def runParTuning():
     # read prepared data
     dataset = pd.read_csv(configuration.data_file_cleaned)
 
-    # parameter tuning
+
     for dep in configuration.dependent:
         print("running parameter tuning maxdepth for :", dep)
+        partun_max_depth(dataset, dep)
+
+    # parameter tuning
+    for dep in configuration.dependent:
+        print("running parameter tuning n_estimators for :", dep)
         partun_n_estimators(dataset, dep)
     
     #partun_max_depth(dataset, 'y_intvl_openness')
     
-    for dep in configuration.dependent:
-        print("running parameter tuning maxdepth for :", dep)
-        partun_max_depth(dataset, dep)
 
 def run():
     # prepare data
@@ -110,15 +122,16 @@ def partun_n_estimators(dataset, dep):
         test_scores.append(score_test / configuration.rf_pt_n_estimators_loop * 100)
 
 
-    line1, = plt.plot(configuration.rf_pt_n_estimators, train_results, 'b', label="Train rmse")
-    line2, = plt.plot(configuration.rf_pt_n_estimators, test_results, 'r', label="Test rmse")
+    #line1, = plt.plot(configuration.rf_pt_n_estimators, train_results, 'b', label="Train rmse")
+    #line2, = plt.plot(configuration.rf_pt_n_estimators, test_results, 'r', label="Test rmse")
 
     line3, = plt.plot(configuration.rf_pt_n_estimators, train_scores, 'g', label="Train score")
     line4, = plt.plot(configuration.rf_pt_n_estimators, test_scores, 'y', label="Test score")
 
-    plt.legend(handler_map={line1: HandlerLine2D(numpoints=2)})
-    plt.ylabel('rmse score')
+    plt.legend(handler_map={line3: HandlerLine2D(numpoints=2)})
+    plt.ylabel('score')
     plt.xlabel('n_estimators')
+    plt.title('n_estimators parameter tuning for ' + dep)
     plt.show()
 
 def partun_max_depth(dataset, dep):
@@ -150,21 +163,22 @@ def partun_max_depth(dataset, dep):
             rmse_test = rmse_test + rmse(y_test, y_pred)
             score_test = score_test + rf.score(x_test, y_test)
             
-        train_results.append(rmse_train / configuration.rf_pt_max_depth_loop)
-        test_results.append(rmse_test / configuration.rf_pt_max_depth_loop)
+        #train_results.append(rmse_train / configuration.rf_pt_max_depth_loop)
+        #test_results.append(rmse_test / configuration.rf_pt_max_depth_loop)
 
         train_scores.append(score_train / configuration.rf_pt_max_depth_loop * 100)
         test_scores.append(score_test / configuration.rf_pt_max_depth_loop * 100)
 
-    line1, = plt.plot(configuration.rf_pt_max_depths, train_results, 'b', label="Train rmse")
-    line2, = plt.plot(configuration.rf_pt_max_depths, test_results, 'r', label="Test rmse")
+    #line1, = plt.plot(configuration.rf_pt_max_depths, train_results, 'b', label="Train rmse")
+    #line2, = plt.plot(configuration.rf_pt_max_depths, test_results, 'r', label="Test rmse")
 
     line3, = plt.plot(configuration.rf_pt_max_depths, train_scores, 'g', label="Train score")
     line4, = plt.plot(configuration.rf_pt_max_depths, test_scores, 'y', label="Test score")
 
-    plt.legend(handler_map={line1: HandlerLine2D(numpoints=2)})
+    plt.legend(handler_map={line3: HandlerLine2D(numpoints=2)})
     plt.ylabel('score')
     plt.xlabel('tree depth')
+    plt.title('max_depth parameter tuning for ' + dep)
     plt.show()
 
 
@@ -186,6 +200,9 @@ def create_random_forest(dep, dataset):
     for x in range(0,configuration.rf_loops):
         # splitting data
         x_train, y_train, x_test, y_test = split_data(dep, dataset)
+
+        #x_test = x_train
+        #y_test = y_train
 
         rf = RandomForestClassifier(n_estimators=configuration.rf_n_estimators, max_depth=configuration.rf_max_depth)
         rf.fit(x_train, y_train)

@@ -1,8 +1,20 @@
+
 ########################################################################
+#
+#   Self Adapting User Profiles
+#   Tim Vande Walle
+#   2019-2020
+#   Thesis VUB
+#   promotor: Olga De Troyer
+#
+########################################################################
+
+
+# ########################################################################
 #   CONFIGURATION
 ########################################################################
 # which parameters to calculate:
-dependent   = [    'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism']
+dependent   = [    'y_intvl_openness_2', 'y_intvl_conscientiousness_2', 'y_intvl_extroversion_2', 'y_intvl_agreeableness_2', 'y_intvl_neuroticism_2']
 
 ########################################################
 #   filters
@@ -17,7 +29,7 @@ metric_medium   = 25
 #   regression algorithm parameters
 ########################################################
 corr_min        = 0.19
-corr_sign_max   = 0.15
+corr_sign_max   = 0.10
 
 max_depth       = 11
 max_dept_poly   = 20
@@ -36,7 +48,7 @@ map_threshold = 0.5
 ########################################################
 #   random forest algorithm parameters
 ########################################################
-rf_test_size                = 0.2
+rf_test_size                = 0.05
 rf_loops                    = 40
 rf_n_estimators             = 100
 rf_max_depth                = 4         # max_depth = 2, 3 of 4
@@ -47,7 +59,7 @@ rf_pt_n_estimators          = [1, 2, 4, 8, 16, 24, 32, 48, 64, 96, 128, 256]
 rf_pt_n_estimators_loop     = 4
 
 import numpy as np
-rf_pt_max_depths            = np.linspace(1, 20, 20, endpoint=True)
+rf_pt_max_depths            = np.linspace(1, 300, 20, endpoint=True)
 rf_pt_max_depth_loop        = 2
 
 
@@ -136,9 +148,9 @@ interestcategories      = [
     
 
 #dimensions  = ['y_pctl_extroversion', 'y_pctl_neuroticism', 'y_pctl_agreeableness', 'y_pctl_conscientiousness', 'y_pctl_openness', 'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm', 'scie_sex_norm','collect_sex_norm','alfa_math_norm','alfa_geo_norm','alfa_collect_norm','beta_hist_norm','age', 'sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories', 'scie_sex','collect_sex','alfa_math','alfa_geo','alfa_collect','beta_hist','wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
-#dimensions      = ['y_intvl_openness_2', 'y_intvl_conscientiousness_2', 'y_intvl_extroversion_2', 'y_intvl_agreeableness_2', 'y_intvl_neuroticism_2', 'y_scie','y_math','y_sport','y_ent','y_hist','y_geo','y_arch',    'y_pctl_extroversion', 'y_pctl_neuroticism', 'y_pctl_agreeableness', 'y_pctl_conscientiousness', 'y_pctl_openness', 'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm','age', 'sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
+dimensions      = ['y_intvl_openness_2', 'y_intvl_conscientiousness_2', 'y_intvl_extroversion_2', 'y_intvl_agreeableness_2', 'y_intvl_neuroticism_2', 'y_scie','y_math','y_sport','y_ent','y_hist','y_geo','y_arch',    'y_pctl_extroversion', 'y_pctl_neuroticism', 'y_pctl_agreeableness', 'y_pctl_conscientiousness', 'y_pctl_openness', 'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm','age', 'sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
 #dimensions      = [ 'y_pctl_extroversion', 'y_pctl_neuroticism', 'y_pctl_agreeableness', 'y_pctl_conscientiousness', 'y_pctl_openness',  'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm','age', 'sex', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
-dimensions  = ['y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'sex', 'age', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
+#dimensions  = ['y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'sex', 'age', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
 dimensions_pol  = ['y_scie','y_math','y_sport','y_ent','y_hist','y_geo','y_arch',    'y_intvl_openness_2', 'y_intvl_conscientiousness_2', 'y_intvl_extroversion_2', 'y_intvl_agreeableness_2', 'y_intvl_neuroticism_2',   'y_pctl_extroversion', 'y_pctl_neuroticism', 'y_pctl_agreeableness', 'y_pctl_conscientiousness', 'y_pctl_openness', 'y_intvl_openness', 'y_intvl_conscientiousness', 'y_intvl_extroversion', 'y_intvl_agreeableness', 'y_intvl_neuroticism', 'sex', 'age', 'alfa_norm', 'beta_norm', 'scie_norm', 'math_norm', 'sport_norm', 'ent_norm', 'hist_norm', 'geo_norm', 'arch_norm', 'do_question_norm', 'do_question_single_norm', 'do_question_group_norm', 'collect_norm', 'total_answers_norm', 'total_categories_norm', 'wet1', 'wet2', 'ges3', 'wis1', 'spo1', 'wis4', 'spo2', 'spo3', 'aar3', 'wis2', 'wis3', 'ent1', 'ent2', 'spo4', 'arc2', 'wet3', 'wet4', 'spo6', 'ges1', 'aar4', 'ent3', 'arc1', 'arc3', 'aar1', 'aar2', 'ges2', 'wet5']
 
 dimensions_logregpca = ['age', 'sex', 'alfa', 'beta', 'scie', 'math', 'sport', 'ent', 'hist', 'geo', 'arch', 'do_question', 'do_question_single', 'do_question_group', 'collect', 'total_answers', 'total_categories']

@@ -204,3 +204,215 @@
     
 #     ## print the gene names and their scores (and +/- sign)
 #     print(loading_scores[top_10_genes])
+
+
+
+
+
+    # # old:
+
+    # X = dataset[sorted(subset)]
+    # y = dataset[dep]
+
+    # # first we create the model for this dependent variable with the entire dataset
+
+    # mul_lr = linear_model.LogisticRegression(multi_class='multinomial', solver='newton-cg')
+    # model = mul_lr.fit(X, y)
+
+
+    # # then we calculate the average fitness (rsme normalized) using k fold cross validation
+    
+    # #print("########################################################################")
+    # fitness_norm = 0
+    # fitness = 0
+    # compared = (0,0)
+    # for train, test in kf.split(dataset):
+    #     # filter rows
+    #     X_train = X.iloc[train]
+    #     y_train = y.iloc[train]
+
+    #     X_test = X.iloc[test]
+    #     y_test = y.iloc[test]
+
+    #     #poly = PolynomialFeatures(degree=degree)
+    #     #poly_variables_train = poly.fit_transform(X_train)
+    #     #poly_variables_test = poly.fit_transform(X_test)
+        
+    #     model_t = mul_lr.fit(X_train, y_train)
+
+    #     # generate predictions and metric
+    #     ypred = model_t.predict(X_test)
+
+    #     r = rmse(y_test, ypred)
+    #     #rmse_norm = round(r / (max(y_test) - min(y_test)), 3)
+    #     rmse_norm = 0
+        
+    #     fitness_norm = fitness_norm + rmse_norm
+    #     fitness = fitness + r
+        
+    #     result_compared = util.compare_intvl(y_test, ypred)
+    #     #result_compared = util.compare(y_test, ypred)
+    #     compared = (compared[0] + result_compared[0], compared[1] + result_compared[1])
+        
+    # fitness_norm = round(fitness_norm / configuration.kfold, 3)
+    # fitness = round(fitness / configuration.kfold, 3)
+    # compared = (round(compared[0] / configuration.kfold, 3), round(compared[1] / configuration.kfold, 3))
+    # #print("########################################################################")
+    # #print(fitness_norm, fitness)
+    # #print("########################################################################")
+
+    # rsquared = model.score(X, y)
+    # rsquared_adj = -1
+
+    # #X = dataset[sorted(independents_filter)]
+    # #model_y = dataset[dependent_str]
+    # #model_y_pred = model_t.predict(X)
+
+    # # compare with random values
+    # #df_random = pd.DataFrame(np.random.randint(1,100,size=(len(model_y), 1)))
+    # #randomlist = random.sample(range(1, 100), len(model_y))
+    # #rmse_random = rmse(model_y, randomlist)
+
+    # model_y = dataset[dep]
+    # # randomlist = random.sample(range(1, 85), len(model_y))        # not usefull because it does not allow for duplicates
+
+    # randomlist = [random.randint(0,1) for x in range(len(model_y))]
+    # #randomlist = [random.randint(0,100) for x in range(len(model_y))]
+
+    # rmse_random = rmse(model_y, randomlist)
+
+    # compared_random = util.compare_intvl(model_y, randomlist)      # for interval dependent variables
+    # #compared_random = util.compare(model_y, randomlist)             # for percentile dependent variables
+    
+    # #print("########################################################################")
+    # #print(model_y)
+    # #print(model_y_pred)
+    # #print("########################################################################")
+    # #print(model_y)
+    # #print(randomlist)
+    # #print("########################################################################")
+    # #print("rmse_random", rmse_random)
+
+    # #return (dep + " ~ " + independents, rsquared, rsquared_adj, fitness_norm, fitness, model.summary(), model_y, model_y_pred)
+    # return ("pca_n:" + str(pca_n) + " = " + dep + " ~ " + "+".join(subset), rsquared, rsquared_adj, fitness_norm, fitness, '', 0, 0, rmse_random, compared, compared_random)
+
+
+
+
+
+
+    # # old:
+
+    # X = dataset[sorted(subset)]
+    # y = dataset[dep]
+
+    # # first we create the model for this dependent variable with the entire dataset
+
+    # mul_lr = linear_model.LogisticRegression(multi_class='multinomial', solver='newton-cg')
+    # model = mul_lr.fit(X, y)
+
+
+    # # then we calculate the average fitness (rsme normalized) using k fold cross validation
+    
+    # #print("########################################################################")
+    # fitness_norm = 0
+    # fitness = 0
+    # compared = (0,0)
+    # for train, test in kf.split(dataset):
+    #     # filter rows
+    #     X_train = X.iloc[train]
+    #     y_train = y.iloc[train]
+
+    #     X_test = X.iloc[test]
+    #     y_test = y.iloc[test]
+
+    #     #poly = PolynomialFeatures(degree=degree)
+    #     #poly_variables_train = poly.fit_transform(X_train)
+    #     #poly_variables_test = poly.fit_transform(X_test)
+        
+    #     model_t = mul_lr.fit(X_train, y_train)
+
+    #     # generate predictions and metric
+    #     ypred = model_t.predict(X_test)
+
+    #     r = rmse(y_test, ypred)
+    #     #rmse_norm = round(r / (max(y_test) - min(y_test)), 3)
+    #     rmse_norm = 0
+        
+    #     fitness_norm = fitness_norm + rmse_norm
+    #     fitness = fitness + r
+        
+    #     result_compared = util.compare_intvl(y_test, ypred)
+    #     #result_compared = util.compare(y_test, ypred)
+    #     compared = (compared[0] + result_compared[0], compared[1] + result_compared[1])
+        
+    # fitness_norm = round(fitness_norm / configuration.kfold, 3)
+    # fitness = round(fitness / configuration.kfold, 3)
+    # compared = (round(compared[0] / configuration.kfold, 3), round(compared[1] / configuration.kfold, 3))
+    # #print("########################################################################")
+    # #print(fitness_norm, fitness)
+    # #print("########################################################################")
+
+    # rsquared = model.score(X, y)
+    # rsquared_adj = -1
+
+    # #X = dataset[sorted(independents_filter)]
+    # #model_y = dataset[dependent_str]
+    # #model_y_pred = model_t.predict(X)
+
+    # # compare with random values
+    # #df_random = pd.DataFrame(np.random.randint(1,100,size=(len(model_y), 1)))
+    # #randomlist = random.sample(range(1, 100), len(model_y))
+    # #rmse_random = rmse(model_y, randomlist)
+
+    # model_y = dataset[dep]
+    # # randomlist = random.sample(range(1, 85), len(model_y))        # not usefull because it does not allow for duplicates
+
+    # randomlist = [random.randint(0,1) for x in range(len(model_y))]
+    # #randomlist = [random.randint(0,100) for x in range(len(model_y))]
+
+    # rmse_random = rmse(model_y, randomlist)
+
+    # compared_random = util.compare_intvl(model_y, randomlist)      # for interval dependent variables
+    # #compared_random = util.compare(model_y, randomlist)             # for percentile dependent variables
+    
+    # #print("########################################################################")
+    # #print(model_y)
+    # #print(model_y_pred)
+    # #print("########################################################################")
+    # #print(model_y)
+    # #print(randomlist)
+    # #print("########################################################################")
+    # #print("rmse_random", rmse_random)
+
+    # #return (dep + " ~ " + independents, rsquared, rsquared_adj, fitness_norm, fitness, model.summary(), model_y, model_y_pred)
+    # return ("pca_n:" + str(pca_n) + " = " + dep + " ~ " + "+".join(subset), rsquared, rsquared_adj, fitness_norm, fitness, '', 0, 0, rmse_random, compared, compared_random)
+
+
+
+
+# def dummy():
+#     print(dep)
+#     print(correlations)
+#     print('done')
+
+
+
+#     X = dataset[sorted(correlations[0])]
+#     y = dataset[dep]
+    
+#     poly = PolynomialFeatures(degree=30)
+#     poly_variables = poly.fit_transform(X)
+
+#     #poly_var_train, poly_var_test, res_train, res_test = train_test_split(poly_variables, results, test_size = 0.3, random_state = 4)
+
+#     regression = linear_model.LinearRegression()
+#     model = regression.fit(poly_variables, y)
+#     score = model.score(poly_variables, y)
+
+#     print(model.get_params)
+#     print(model.coef_)
+#     print(score)
+
+
+#     exit(0)

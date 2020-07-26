@@ -1,5 +1,15 @@
 ########################################################################
 #
+#   Self Adapting User Profiles
+#   Tim Vande Walle
+#   2019-2020
+#   Thesis VUB
+#   promotor: Olga De Troyer
+#
+########################################################################
+
+########################################################################
+#
 #   polynomial regression lib for SelfAdaptionUserProfiles
 #
 # ########################################################################
@@ -86,31 +96,7 @@ def loop_all_combinations_for(dep, correlations, dataset):
     util.display_result(dep + " best fit", best_fit)
 
 
-# def dummy():
-#     print(dep)
-#     print(correlations)
-#     print('done')
 
-
-
-#     X = dataset[sorted(correlations[0])]
-#     y = dataset[dep]
-    
-#     poly = PolynomialFeatures(degree=30)
-#     poly_variables = poly.fit_transform(X)
-
-#     #poly_var_train, poly_var_test, res_train, res_test = train_test_split(poly_variables, results, test_size = 0.3, random_state = 4)
-
-#     regression = linear_model.LinearRegression()
-#     model = regression.fit(poly_variables, y)
-#     score = model.score(poly_variables, y)
-
-#     print(model.get_params)
-#     print(model.coef_)
-#     print(score)
-
-
-#     exit(0)
 
 def regression(dep, subset, dataset, degree):
     X = dataset[sorted(subset)]

@@ -40,7 +40,7 @@ import nb
 def menu():
     choice = True
     # 1:  N/A Run Genetic Algorithm
-    
+
     while choice:
         print("""
         0:  Preprocess and analyse data
@@ -144,6 +144,7 @@ def run_predictiveModelRandForParTuning():
     print()
     print("########################################################################")
     print("running predictive model - random forest parameter searching & tuning")
+    randfor.runParTuning()
 
 def run_predictiveModelLogReg():
     print()

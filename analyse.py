@@ -1,5 +1,15 @@
 ########################################################################
 #
+#   Self Adapting User Profiles
+#   Tim Vande Walle
+#   2019-2020
+#   Thesis VUB
+#   promotor: Olga De Troyer
+#
+########################################################################
+
+########################################################################
+#
 #   preprocessing and analysing for SelfAdaptionUserProfiles
 #
 # ########################################################################
@@ -45,11 +55,11 @@ def run():
     dataset = pd.read_csv(configuration.data_file_cleaned)
 
     # check correlation
-    #correlations = util.check_correlation(dataset, configuration.dimensions)
-    #print("correlations:", correlations)
+    correlations = util.check_correlation(dataset, configuration.dimensions)
+    print("correlations:", correlations)
 
     #run_pca(dataset)
-    pca_plots(dataset)
+    #pca_plots(dataset)
 
     # draw scatterplots
     #scatter_plots(dataset)
@@ -61,6 +71,12 @@ def scatter_plots(dataset):
     print("scatterplots")
     
     plot_settings = [
+        ("do_question",                     "y_pctl_extroversion",              "do_question",              "extroversion percentile",                  "y_pctl_extroversion"),
+        ("sex",                             "y_pctl_neuroticism",               "sex",                      "neuroticism percentile",                   "y_pctl_neuroticism"),
+        ("spo4",                            "y_pctl_agreeableness",             "spo4",                     "agreeableness percentile",                 "y_pctl_agreeableness"),
+        ("spo4",                            "y_pctl_conscientiousness",         "spo4",                     "conscientiousness percentile",             "y_pctl_conscientiousness"),
+        ("hist",                            "y_pctl_openness",                  "hist",                     "openness percentile",                      "y_pctl_openness"),
+
         ("beta_norm",                   "y_scie",                       "beta (normalized)",                "science (preference)",         "y_scie"),
         ("math_norm",                   "y_math",                       "math (normalized)",                "math (preference)",            "y_math"),
         ("sport_norm",                  "y_sport",                      "sport (normalized)",               "sport (preference)",           "y_sport"),
@@ -110,7 +126,7 @@ def run_pca_2(dataset, subset, color_var):
     print(scaled_data2.shape)
     print(scaled_data2)
     
-    # Importing PCA 
+    # Import PCA 
     from sklearn.decomposition import PCA 
 
     pca2 = PCA() 
@@ -127,13 +143,13 @@ def run_pca_2(dataset, subset, color_var):
     plt.bar(x=range(1,len(per_var)+1), height=per_var, tick_label=labels)
     plt.ylabel('Percentage of Explained Variance')
     plt.xlabel('Principal Component')
-    plt.title('Scree Plot for ' + color_var)
+    plt.title('Scree Plot ')
     plt.show()
 
     print(x_pca2.shape )
 
 
-    # giving a larger plot 
+    # enlarge plot
     plt.figure(figsize =(8, 6)) 
     
     
@@ -142,7 +158,7 @@ def run_pca_2(dataset, subset, color_var):
 
     print(x_pca2[:, 0])
     
-    # labeling x and y axes 
+    # x / y axes labels
     plt.xlabel('First Principal Component') 
     plt.ylabel('Second Principal Component') 
     plt.title('PCA plot for' + color_var)
@@ -177,7 +193,7 @@ def run_pca(dataset):
     print(scaled_data2.shape)
     print(scaled_data2)
     
-    # Importing PCA 
+    # Import PCA 
     from sklearn.decomposition import PCA 
 
     pca2 = PCA() 
@@ -200,7 +216,7 @@ def run_pca(dataset):
     print(x_pca2.shape )
 
 
-    # giving a larger plot 
+    # enlarge plot 
     plt.figure(figsize =(8, 6)) 
     
     # y_intvl_openness	y_intvl_conscientiousness	y_intvl_extroversion	y_intvl_agreeableness	y_intvl_neuroticism	y_scie	y_math	y_sport	y_ent	y_hist	y_geo	y_arch
@@ -210,7 +226,7 @@ def run_pca(dataset):
     print(x_pca2[:, 0])
     exit(0)
     
-    # labeling x and y axes 
+    # x / y axes labels
     plt.xlabel('First Principal Component') 
     plt.ylabel('Second Principal Component') 
 

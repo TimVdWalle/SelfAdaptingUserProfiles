@@ -1,5 +1,15 @@
 ########################################################################
 #
+#   Self Adapting User Profiles
+#   Tim Vande Walle
+#   2019-2020
+#   Thesis VUB
+#   promotor: Olga De Troyer
+#
+########################################################################
+
+# ########################################################################
+#
 #   utilities (general) lib for SelfAdaptionUserProfiles
 #
 # ########################################################################
@@ -171,7 +181,6 @@ def compare(y_real, y_pred):
 
 
 def lin_reg_plot(x, y, xlabel, ylabel, colors):
-    # linear regression fitting
     print("_____")
 
     print(x.shape)
